@@ -1,0 +1,21 @@
+.login-container
+{
+    padding:30px 0px 300px 0px;
+    text-align: center; 
+    background-color: rgb(197, 246, 255);
+ }  
+
+ .form-group
+ {   
+    padding:20px 40px 7px 40px;
+ } 
+
+ .fa-pen-fancy
+{
+   margin-left: 13px;
+ }
+
+ .btn-outline-secondary
+{
+   margin-right: 17px;
+}

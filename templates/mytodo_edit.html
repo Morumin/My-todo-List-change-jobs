@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- FontAwesome CSS -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mytodo.css') }}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>└( 'ω')┘ムキッ</title>
+</head>
+
+<body>
+  <h4 class ="font-weight-normal display-6">{{ session['username'] }}'s Todo List</h4>
+  <form method="post" action="{{ url_for('edit_task',id=mytodo1['id'])}}">
+     {% if error_list %}
+     <ul>    
+     {% for v in error_list %}
+         <li>{{ v }}</li>
+     {% endfor %}
+     </ul>
+     {% endif %}
+     <div class="form-group">
+     <input type="text" class="form-control" name="name" value="{{  mytodo1['name'] }}">
+     </div>
+
+     <div class="form-row text-center">
+     <div class="col-12">
+     <button type="submit" class="btn btn-outline-warning">＋</button>
+     </div>   
+     </div>
+     <a href="{{ url_for('logout')}}">ログアウト</a>
+  </form>
+</body>
+</html>

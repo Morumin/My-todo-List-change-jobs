@@ -1,0 +1,58 @@
+li 
+{
+  list-style: none;
+  color: #dc3545;
+}
+
+  
+.this-container 
+{
+  padding-top: 10px;
+}
+
+
+h4 
+{
+   text-align: center;
+
+}
+
+.form-group
+{
+   padding:10px 15px 0px 15px;
+} 
+
+.main-container
+{
+  position: relative;
+  font-size: 13px;
+  
+}
+
+table
+{
+  display: inline-block;
+  margin:auto;
+  font-size: 13px;
+}
+
+.container
+{
+  padding-top: 15px;
+
+}
+
+a
+{
+  display: inline-block;
+  float: right;
+}
+
+.fa-trash-alt
+{
+ display: inline-block;
+ color: #dc3545;
+ margin-left: 5px;
+
+}
+
