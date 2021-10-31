@@ -10,6 +10,8 @@ https://sleepy-crag-12908.herokuapp.com
 # Features
 
 Todoアプリ
+※トップの下方が白くなってしまってるため
+改修予定です。
 
 # Author
 
